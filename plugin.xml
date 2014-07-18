@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+
+<plugin id="org.eclipse.contribution.junit" name="Hello World Junit" version="1.0.0">
+<requires>
+  <import plugin="org.eclipse.ui"/>
+</requires>
+
+<extension point="org.eclipse.ui.popupMenus">
+  <objectContribution
+    id="org.eclipse.contribution.junit.runtest"
+    objectClass="org.eclipse.jdt.core.IType" >
+    <action
+      id="org.eclipse.contribution.junit.runtest.action"
+      label="Run Test"
+      class=""
+      enablesFor="1">
+    </action>
+  </objectContribution>
+</extension>
+
+ </plugin>
